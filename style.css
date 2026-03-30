@@ -1,0 +1,62 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(60, 60, 60);
+}
+
+.display {
+  background-color: rgb(25, 25, 25);
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+    -webkit-box-shadow: 4px 8px 15px 2px #000000; 
+  box-shadow: 4px 8px 15px 2px #000000;
+}
+
+.cronometro {
+    animation: neonAnim 8.5s alternate-reverse infinite;
+    color: #62ff00;
+    font-family: monospace;
+    font-size: 69px;
+}
+@keyframes neonAnim {
+    from {
+        text-shadow:
+          0 0 25px rgba(89, 255, 0, 0.7),
+          0 0 55px rgba(89, 255, 0, 0.7),
+          0 0 115px rgba(89, 255, 0, 0.7);
+      }
+      to {
+        text-shadow:
+          0 0 20px rgba(89, 255, 0, 0.7),
+          0 0 35px rgba(89, 255, 0, 0.7),
+          0 0 75px rgba(89, 255, 0, 0.7);
+      }
+}
+
+.btnContainer {
+  display: flex;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: monospace;
+  background-color: rgb(27, 27, 27);
+  color: #62ff00;
+  -webkit-box-shadow: 4px 8px 15px 2px #000000; 
+  box-shadow: 4px 8px 15px 2px #000000;
+  animation: neonAnim 8.5s alternate-reverse infinite;
+}
